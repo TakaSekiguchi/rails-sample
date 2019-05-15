@@ -1,0 +1,6 @@
+<% provide(:title, 'Search') %>
+<h3>Microposts (<%= @microposts.count %>)</h3>
+<ol class="microposts">
+  <%= render @microposts %>
+  <%= will_paginate @microposts %>
+</ol>
